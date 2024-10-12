@@ -8,3 +8,9 @@
     position: fixed;
     bottom: 0;
 }
+.selecionado{
+    border: 5px solid #32B72F ;
+}
+.selecionado.-comida{
+    border: 5px solid #32B72F ;
+}

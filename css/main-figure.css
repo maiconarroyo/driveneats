@@ -20,6 +20,36 @@
     
 }
 
+
+.main-drink{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 9%;
+    margin: 10px;
+    width: 172px;
+    height: 216px;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    
+}
+
+.main-candy{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 9%;
+    margin: 10px;
+    width: 172px;
+    height: 216px;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    
+}
+
+
 .food-img{
     width: 144px;
     height: 87px;
