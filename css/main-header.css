@@ -1,0 +1,11 @@
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #CF2B2B ;
+    width: 414px;
+    height: 92px;
+    position: fixed;
+    top: 0;
+
+}

@@ -1,0 +1,47 @@
+.pedidos{
+    display: flex;
+    flex-direction: row;
+   max-width: 414px;
+    overflow-x: auto;
+ 
+}
+
+.main-food{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 9%;
+    margin: 10px;
+    width: 172px;
+    height: 216px;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    
+}
+
+.food-img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin:auto;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.drink-img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin:auto;
+    margin-bottom: 0;
+    margin-top: 05px;
+}
+.doce-img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin:auto;
+    margin-bottom: 0;
+    margin-top: 0px;
+}

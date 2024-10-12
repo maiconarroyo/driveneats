@@ -1,0 +1,19 @@
+.main-content{
+    display: flex;
+    margin: auto;
+    width: 414px;
+    background-color:#eeeeee;
+
+    
+}
+
+.align{
+    margin-top: 90px;
+    margin-bottom: 112px;
+}
+
+.pedidos{
+    margin: 0px;
+    margin-bottom: 10px;
+
+}

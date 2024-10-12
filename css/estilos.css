@@ -1,0 +1,10 @@
+.checkout{
+    width: 414px;
+    height: 92px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
