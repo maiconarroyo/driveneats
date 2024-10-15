@@ -48,7 +48,7 @@ function verificarPedido() {
 function fecharPedido() {
     if (comidaSelecionada && bebidaSelecionada && sobremesaSelecionada) {
         document.querySelector('.overlay').classList.add('active');
-        document.querySelector('.overlay').style.display = 'block';
+        document.querySelector('.overlay').style.display = 'flex';
         document.querySelector('.fechar-pedido').style.display = 'flex';
         document.querySelector('.sub-title.-buttom').classList.add('escondido');
     }
