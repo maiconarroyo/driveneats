@@ -31,21 +31,21 @@
         <div class="topic-main">
             <h1 class="main-title -topic">Primeiro, seu prato</h1>
             <div class="pedidos">
-                <figure class="main-food -pf" onclick="selecionarComida('pf')">
+                <figure class="main-food -pf" onclick="selecionarComida(this)">
                     <img src="assets/pf_carne.jpg" alt="" class="food-img">
                         <h1 class="sub-title -foodName">PfZão Brazuca</h1>
                         <h2 class="sub-title -foodDescription">Um pouco de batata, um pouco de salada</h2>
                         <h2 class="sub-title -price">14.90</h2>
                 </figure>
 
-                <figure class="main-food -parmejiana" onclick="selecionarComida('parmejiana')">
+                <figure class="main-food -parmejiana" onclick="selecionarComida(this)">
                     <img src="assets/pf_frango.png" alt="" class="food-img">
                         <h1 class="sub-title -foodName">Parmejiana</h1>
                         <h2 class="sub-title -foodDescription">Um pouco de batata, um pouco de salada</h2>
                         <h2 class="sub-title -price">14.90</h2>
                 </figure>
 
-                <figure class="main-food -feijoada" onclick="selecionarComida('feijoada')">
+                <figure class="main-food -feijoada" onclick="selecionarComida(this)">
                     <img src="assets/pf_feijoada.jpg" alt="" class="food-img">
                         <h1 class="sub-title -foodName">Feijoada</h1>
                         <h2 class="sub-title -foodDescription">Um pouco de batata, um pouco de salada</h2>
@@ -55,21 +55,21 @@
 
             <h1 class="main-title -topic">Agora, sua bebida</h1>
             <div class="pedidos">
-                <figure class="main-drink -coca" onclick="selecionarBebida('coca')">
+                <figure class="main-drink -coca" onclick="selecionarBebida(this)">
                     <img src="assets/coca.png" alt="coca" class="drink-img">
                         <h1 class="sub-title -foodName">Coca-Cola</h1>
                         <h2 class="sub-title -foodDescription">Lata 350ml</h2>
                         <h2 class="sub-title -drink">4.90</h2>
                 </figure>
 
-                <figure class="main-drink -fanta" onclick="selecionarBebida('fanta')">
+                <figure class="main-drink -fanta" onclick="selecionarBebida(this)">
                     <img src="assets/fanta.png" alt="fanta" class="drink-img">
                         <h1 class="sub-title -foodName">Fanta</h1>
                         <h2 class="sub-title -foodDescription">Lata 350ml</h2>
                         <h2 class="sub-title -drink">4.90</h2>
                 </figure>
 
-                <figure class="main-drink -suco"onclick="selecionarBebida('suco')">
+                <figure class="main-drink -suco"onclick="selecionarBebida(this)">
                     <img src="assets/suco.png" alt="suco" class="drink-img">
                         <h1 class="sub-title -foodName">Suco</h1>
                         <h2 class="sub-title -foodDescription">Suco 350ml</h2>
@@ -80,7 +80,7 @@
             <h1 class="main-title -topic">Por fim, sua sobremesa</h1>
             <div class="pedidos">
                 
-                <figure class="main-candy -brownie"  onclick="selecionarSobremesa('brownie')">
+                <figure class="main-candy -brownie"  onclick="selecionarSobremesa(this)">
                     <img src="assets/brownie.jpg" alt="brownie" class="doce-img">
                         <h1 class="sub-title -foodName">brownie</h1>
                         <h2 class="sub-title -foodDescription">Porção Individual</h2>
@@ -88,25 +88,32 @@
                 </figure>
            
 
-                <figure class="main-candy -mouse" onclick="selecionarSobremesa('mouse')">
+                <figure class="main-candy -mouse" onclick="selecionarSobremesa(this)">
                     <img src="assets/mouse.jpg" alt="" class="doce-img">
                         <h1 class="sub-title -foodName">Mouse</h1>
                         <h2 class="sub-title -foodDescription">Porção Individual</h2>
                         <h2 class="sub-title -doce">7.90</h2>
                 </figure>
 
-                <figure class="main-candy -pudim" onclick="selecionarSobremesa('pudim')">
+                <figure class="main-candy -pudim" onclick="selecionarSobremesa(this)">
                     <img src="assets/pudim.jpg" alt="" class="doce-img">
                         <h1 class="sub-title -foodName">Pudim</h1>
                         <h2 class="sub-title -foodDescription">Porção Individual</h2>
                         <h2 class="sub-title -doce">7.90</h2>
                 </figure>
             </div>
+            </div>    
             <div class="checkout">
-                <buttom class="sub-title -buttom">Selecione os 3 itens
-                    para fechar o pedido</buttom>
+                <button class="sub-title -buttom" onclick="fecharPedido()" disabled>Selecione os 3 itens
+                    para fechar o pedido</button>
             </div>
         </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="fechar-pedido">
+            <a class="tudo-certo">Tudo certo, pode pedir!</a>
+            <button class="Cancelar" onclick="cancelarPedido()">Cancelar</button>
         </div>
     </div>
     <script src="JavaScript/selecionar.js"></script>
