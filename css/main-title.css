@@ -94,3 +94,19 @@
     background-color: #32B72F;
     color: white;
 }
+
+.sub-title.-total{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.sub-title.sub-title.-totaltopo{
+    font-weight: 700;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.sub-title.sub-title.-totalbaxio{
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
