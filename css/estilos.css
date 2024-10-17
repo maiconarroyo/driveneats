@@ -28,7 +28,7 @@
     position: fixed;
     top:0;
     left: 0;
-    width: 100vw;
+    width: 414px;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.7); 
     display: flex;
