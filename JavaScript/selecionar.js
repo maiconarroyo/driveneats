@@ -73,3 +73,24 @@ function cancelarPedido() {
     document.querySelector('.overlay').style.display = 'none';
     document.querySelector('.fechar-pedido').style.display = 'none';
 }
+
+
+function enviarPedido() {
+    if (comidaSelecionada && bebidaSelecionada && sobremesaSelecionada) {
+        const precoComida = parseFloat(document.querySelector('.main-food.selecionado .sub-title.-price').textContent);
+        const precoBebida = parseFloat(document.querySelector('.main-drink.selecionado .sub-title.-drink').textContent);
+        const precoSobremesa = parseFloat(document.querySelector('.main-candy.selecionado .sub-title.-doce').textContent);
+        const total = precoComida + precoBebida + precoSobremesa;
+
+        const mensagem = `Olá, gostaria de fazer o pedido:
+        - Prato: ${comida}
+        - Bebida: ${bebida}
+        - Sobremesa: ${sobremesa}
+        Total: R$${total.toFixed(2)}`;
+
+        const mensagemCodificada = encodeURIComponent(mensagem);
+        const numeroWhatsapp = "+5521989896484";
+        const urlWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${mensagemCodificada}`;
+        window.open(urlWhatsapp, '_blank');
+    }
+}
