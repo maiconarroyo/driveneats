@@ -53,12 +53,18 @@ function verificarPedido() {
 
 function fecharPedido() {
     if (comidaSelecionada && bebidaSelecionada && sobremesaSelecionada) {
+        const precoComida = parseFloat(document.querySelector('.sub-title.-price').textContent);
+        const precoBebida = parseFloat(document.querySelector('.sub-title.-drink').textContent);
+        const precoSobremesa = parseFloat(document.querySelector('.sub-title.-doce').textContent);
+        const total = precoComida + precoBebida + precoSobremesa;
+
         document.querySelector('.overlay').classList.add('active');
         document.querySelector('.overlay').style.display = 'flex';
         document.querySelector('.fechar-pedido').style.display = 'flex';
         document.querySelector('.sub-title.-buttom').classList.add('escondido');
-        const texto =  `<br><br>${comida}: 14.90 <br><br>${bebida}: 4.90 <br><br>${sobremesa}: 7.90`;
+        const texto =  `<br><br>${comida}: ${precoComida} <br><br>${bebida}: ${precoBebida} <br><br>${sobremesa}: ${precoSobremesa}`;
         document.querySelector('.sub-title.-total').innerHTML = texto;
+        document.querySelector('.sub-title.-totalbaixo').textContent = `TOTAL: ${total.toFixed(2)}`;
     }
 }
 
